@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<h1 style="color: black; text-align: center">REGISTRATION FORM</h1> 
+           
+  
+  
+    <div class="container">
+       <!--StudentName-->
+  <label class="label">StudentName:</label>
+    <input type="text" class="StudentNameTXT"placeholder="StudentName"/> 
+	<br/> 
+	<br/>
+     <!--Year/Course-->
+  <label class="label">Year/Course:</label>
+    <input type="text" class="CourseTXT"placeholder="Course"/> 
+	<br/> 
+	<br/>  
+         <!--Contact -->
+  <label class="label">Contact:</label>
+   <input type="text"class= "ContactTXT"placeholder="Contact">   <br></br>
+     <!--StudentName-->
+  <label class="label">Student No:</label>
+   <input type="text"class="StudentNoTXT"placeholder="Student No"> <br> </br>
+      <!--Address -->
+  <label class="label">Address:</label>
+   <input type="text"class="AddressTXT"placeholder="Address"> <br> </br>
+     <!--Email-->
+  <label class="label">Email:</label>
+   <input type="text"class="EmailTXT"placeholder="Email"> <br> </br>
+  <!--Password-->
+  <label class="label">Password:</label>
+ <input type = "password" class= "passwordTXT" placeholder="Password">
+  </br>
+  </br>
+    <!--Birthday-->
+<label class="label"> Birthday:</label>
+      <input type="date">
+      </br>
+      </br>   
+  <!--Gender-->
+  <label class="label">Gender:</label>
+  <div class="checkbox">
+  <input type="checkbox" name="MaleFemale">
+ Male
+ </label>
+ 
+ <label class="checkbox">
+ <input type="checkbox" name="MaleFemale">
+ Female
+ </label>
+ </div>
+  <br/> 
+
+    <!--MARITAL STATUS-->
+  <label class="label">Marital Status:</label>
+  <div class="control">
+   <label class="radio">
+   <input type="radio" name="SingleMarriedDivorced">
+   Single
+   </label>
+   
+   <label class="radio">
+   <input type="radio" name="SingleMarriedDivorced">
+   Married  
+   </label>
+   
+   <label class="radio">
+   <input type="radio" name="SingleMarriedDivorced">
+   Divorced
+   </label>
+   </div>
+    <br/>
+ 
+  <!--Register-->
+ <button id = "RegisterBTN">Register</button> 
+ </br>
+ </br>
+
+    <script>
+     StudentName = document.getElementById('StudentNameTXT'); 
+     Years/Course = document.getElementById('CourseTXT')
+    Contact = document.getElementById('ContactTXT');  
+     Student No = document.getElementById('StudentNoTXT');
+      Address = document.getElementById('AddressTXT');
+      usn = document.getElementById('EmailTXT');
+      pwd = document.getElementById('passwordTXT');  
+      RegisterButton = document.getElementById('RegisterBTN');
+      RegisterButton.addEventListener('click', RegisterAttempt);
+      
+    function  RegisterAttempt() {
+if (StudentName.value === "Erick Rodelas" && Years/Course.value === "BSIT-3" && Contact.value === " 09993337294" && Student No.value === "21-2313-22" && Address.value === "Blk4 Lot27" && usn.value === "Erick" && pwd.value === "pass123"){
+    alert("Register Success!"); 
+}
+      else{
+        alert("Incorrect Username or Password!");
+      }
+    }
+          </script>
+       </div>  
+	
+  <!--Style-->
+  <style>
+ 
+   .container {
+    width: 545px;
+    margin: 0 auto;
+    border: 4px solid black;
+    padding: 20px;
+  }
+
+h1{
+    text-align: center;
+    font : 300px;
+}
+  .label {
+    font-size: 20px;
+  }
+  .EmailTXT {
+    width: 525px;
+    padding: 10px;
+    margin: 5px 0;
+  }
+
+  .StudentNameTXT {
+      width: 525px;
+      padding: 10px;
+      margin: 5px 0;
+    }
+  .CourseTXT {
+        width: 525px;
+        padding: 10px;
+        margin: 5px 0;
+      }
+     .ContactTXT {
+        width: 525px;
+        padding: 10px;
+        margin: 5px 0;
+      } 
+  .StudentNoTXT {
+          width: 525px;
+          padding: 10px;  
+          margin: 5px 0;
+        }
+  .passwordTXT  {
+            width: 525px;
+            padding: 10px;
+            margin: 5px 0;
+          }
+ .AddressTXT {
+         width: 525px;
+         padding: 10px;
+         margin: 5px 0;
+          }
+          
+  .Register {
+    width: 525px;
+    padding: 10px;
+    margin: 10px 0;
+   
+}
+body{
+	  background-color:green;
+	  background-image:url("4bodybackground.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      margin:0;
+}	  
+     
+
+  </style>

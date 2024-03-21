@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html>
+<form action="action_page.php">
+<h1 style="color: black; text-align: center">REGISTRATION FORM</h1> 
+    
+    <div class="container">
+       <!--firstName-->
+ <label class="label">Firstname:</label>
+    <input type="text" class="FirstnameTXT"placeholder="Firstname"/> 
+	<br/> 
+	<br/>
+	<!--MiddletName-->
+	<label class="label">Middlename:</label>
+    <input type="text" class="MiddlenameTXT"placeholder="Middlename"/> 
+	<br/> 
+	<br/>
+	<!--lastName-->
+	<label class="label">Lastname:</label>
+    <input type="text" class="LastnameTXT"placeholder="Lastname"/> 
+     <!--Year/Course-->
+	 <br/> 
+	<br/>
+  <label class="label">Year/Course:</label>
+    <input type="text" class="CourseTXT"placeholder="Course"/> 
+	<br/> 
+	<br/>  
+         <!--Contact -->
+  <label class="label">Contact:</label>
+   <input type="text"class= "ContactTXT"placeholder="Contact">   <br></br>
+     <!--StudentName-->
+  <label class="label">Student No:</label>
+   <input type="text"class="StudentNoTXT"placeholder="Student No"> <br> </br>
+      <!--Address -->
+  <label class="label">Address:</label>
+   <input type="text"class="AddressTXT"placeholder="Address"> <br> </br>
+     <!--Email-->
+  <label class="label">Username:</label>
+   <input type="text"class="UsernameTXT"placeholder="Username"> <br> </br>
+  <!--Password-->
+  <label class="label">Password:</label>
+ <input type = "password" class= "passwordTXT" placeholder="Password">
+  </br>
+  </br>
+    <!--Birthday-->
+<label class="label"> Birthday:</label>
+      <input type="date">
+      </br>
+      </br>   
+ <!--Gender-->
+		<label class="label"><b>Gender:</b></label>
+		<form>
+		<input type="radio" id="male" name="Gender" value="Male" required>
+		<label for="male"><b>Male</b></label>
+		<input type="radio" id="female" name="Gender" value="Female" required>
+		<label for="female"><b>Female</b></label>
+		<br/>
+		<br>
+ <p><b>By creating an account you agree to our</b> <a href="#">Terms & Privacy</a>.</p>
+		<button type="submit" class="Registerbtn">Register</button>
+       </div>  
+	
+  <!--Style-->
+  <style>
+ 
+   .container {
+    width: 545px;
+    margin: 0 auto;
+    border: 4px solid black;
+    padding: 20px;
+  }
+
+h1{
+    text-align: center;
+    font : 300px;
+}
+  .label {
+    font-size: 20px;
+  }
+  .UsernameTXT {
+    width: 525px;
+    padding: 10px;
+    margin: 5px 0;
+  }
+
+  .FirstnameTXT {
+      width: 525px;
+      padding: 10px;
+      margin: 5px 0;
+    }
+	.MiddlenameTXT {
+      width: 525px;
+      padding: 10px;
+      margin: 5px 0;
+    }
+	.LastnameTXT {
+      width: 525px;
+      padding: 10px;
+      margin: 5px 0;
+    }
+  .CourseTXT {
+        width: 525px;
+        padding: 10px;
+        margin: 5px 0;
+      }
+     .ContactTXT {
+        width: 525px;
+        padding: 10px;
+        margin: 5px 0;
+      } 
+  .StudentNoTXT {
+          width: 525px;
+          padding: 10px;  
+          margin: 5px 0;
+        }
+  .passwordTXT  {
+            width: 525px;
+            padding: 10px;
+            margin: 5px 0;
+          }
+ .AddressTXT {
+         width: 525px;
+         padding: 10px;
+         margin: 5px 0;
+          }
+          
+ .Registerbtn {
+		background-color: #04AA6D;
+		color: white;
+		padding: 16px 20px;
+		margin: 8px 0;
+		border: none;
+		cursor: pointer;
+		width: 100%;
+		opacity: 0.9;
+}
+body{
+		background-color: white;
+		background-image: url("2bodybackground.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		padding: 0;
+ }
+     
+
+  </style>
